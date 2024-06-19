@@ -1,0 +1,11 @@
+/* src/components/InfluencerResults.css */
+.results-list {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+  }
+  
+  .no-results {
+    text-align: center;
+  }
+  

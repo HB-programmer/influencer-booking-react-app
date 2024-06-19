@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# Influencer Selection App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React-based application for selecting and booking influencers, using Ant Design for the UI. This README will guide you through the setup and installation process.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
 
-### `npm start`
+1. [Features](#features)
+2. [Prerequisites](#prerequisites)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Project Structure](#project-structure)
+6. [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Select and book influencers based on preferences.
+- User-friendly interface with Ant Design components.
+- Dynamic filtering and selection of influencers.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Prerequisites
 
-### `npm run build`
+Before you begin, ensure you have met the following requirements:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Node.js](https://nodejs.org/) (>= 16.x)
+- [npm](https://www.npmjs.com/) (or [yarn](https://yarnpkg.com/))
+- [Git](https://git-scm.com/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Follow these steps to get the application up and running:
 
-### `npm run eject`
+### 1. Clone the Repository
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone git@github.com:your-username/influencer-selection-app.git
+cd influencer-selection-app
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 2. Install Dependency
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+or 
 
-## Learn More
+yarn install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Usage
 
-### Code Splitting
+###  Run the application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm start
+```
 
-### Analyzing the Bundle Size
+ - [Set Preferences] : Use the form to set your preferences for selecting an influencer.
+ - [Select Influencer] : Browse the list of influencers that match your criteria and select one.
+ - [Booking Confirmation] : Review and confirm your booking details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+influencer-selection-app/
+│
+├── public/                  # Static files
+├── src/
+│   ├── components/          # React components
+│   ├── pages/               # Page components
+│   ├── services/            # API service functions
+│   ├── App.js               # Main app component
+│   ├── index.js             # Entry point
+│   └── ...
+├── config/
+│   └── google_cloud_service_config/
+│       └── your-service-account.json  # Google Cloud service account key
+├── .env                     # Environment variables
+├── package.json             # npm configuration
+└── README.md                # This file
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Notes
+- *Images and GIFs*: Add relevant images or GIFs to the docs folder for demonstration and link them in the README.
+- *Environment Variables*: Adjust .env file content according to your actual configuration.
+- *Configuration Details*: Replace placeholders (like your-bucket-name) with actual values specific to your setup.
